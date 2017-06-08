@@ -112,6 +112,9 @@
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
   height: 102px;
   padding: 27px 0 9px;
+  z-index: 999;
+  width: 100%;
+  position: relative;
 }
 
 .top-nav__back {
@@ -162,7 +165,23 @@ body {
   font-size: 17px;
 }
 
+.site-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.block {
+  position: relative;
+  width: 100%;
+}
+
 .container {
+  position: relative;
   max-width: 1050px;
   width: 100%;
   padding: 0 20px;
@@ -170,7 +189,11 @@ body {
   height: 100%;
 }
 
-.container_header {
+.container_910 {
+  max-width: 910px;
+}
+
+.container_1070 {
   max-width: 1070px;
 }
 
@@ -220,4 +243,18 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.circle {
+  width: 189px;
+  height: 189px;
+  margin-top: -108px;
+  margin-left: auto;
+  margin-right: -103px;
+  background-color: #00a8ff;
+  border-radius: 50%;
+}
+
+.is-overflow-hidden {
+  overflow: hidden;
 }
