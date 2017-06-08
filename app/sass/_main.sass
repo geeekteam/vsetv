@@ -1,14 +1,58 @@
 html, body
-  margin: 0
-  height: 100%
+	margin: 0
+	height: 100%
+
+*
+	box-sizing: border-box
+
+a
+	color: inherit
+	text-decoration: none
 
 body
-  box-shadow: inset 0 0 500px
+	font-family: "Helvetica Neue"
+	font-weight: 300
+	font-size: 17px
 
-.logo
-  left: 50%
-  margin-left: -37.5px
-  margin-top: -39.5px
-  position: absolute
-  top: 50%
-  font-size: 0
+.container
+	max-width: 1050px
+	width: 100%
+	padding: 0 20px
+	margin: 0 auto
+	height: 100%
+
+.container_header
+	max-width: 1070px
+	
+.inline-block
+	display: inline-block
+
+.flex
+	display: flex
+
+.flex-column
+	flex-direction: column
+
+.flex-item-left
+	margin-left: 0
+	margin-right: auto
+
+.flex-item-right
+	margin-right: 0
+	margin-left: auto
+
+.flex-item-middle
+	align-self: center
+
+.button
+	font-family: "Bello Pro"
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	font-weight: normal
+	font-size: 19px
+	cursor: pointer
+	text-align: center
+
+.text-center
+	text-align: center
