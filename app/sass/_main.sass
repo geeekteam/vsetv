@@ -13,6 +13,12 @@ body
 	font-family: "Helvetica Neue"
 	font-weight: 300
 	font-size: 17px
+	color: #000000
+
+p
+	padding: 0
+	margin: 0
+	line-height: 1
 
 .site-wrapper
 	width: 100%
@@ -24,6 +30,8 @@ body
 .block
 	position: relative
 	width: 100%
+	max-width: 2560px
+	margin: 0 auto
 
 .container
 	position: relative
@@ -33,8 +41,19 @@ body
 	margin: 0 auto
 	height: 100%
 
+.container-910
+	position: relative
+	max-width: 910px
+	width: 100%
+	padding: 0 20px
+	margin: 0 auto
+	height: 100%
+
 .container_910
 	max-width: 910px
+
+.container_955
+	max-width: 955px
 
 .container_1070
 	max-width: 1070px
@@ -44,6 +63,9 @@ body
 
 .flex
 	display: flex
+
+.display-block
+	display: block
 
 .flex-column
 	flex-direction: column
@@ -71,15 +93,216 @@ body
 
 .text-center
 	text-align: center
+
+.centered
+	margin: 0 auto
+
+.general
+	height: 738px
 	
-.circle
-	width: 189px
-	height: 189px
-	margin-top: -108px
-	margin-left: auto
-	margin-right: -103px
-	background-color: #00a8ff
+.general__circle-blue
+	position: absolute
 	border-radius: 50%
+	background-color: #00a8ff
+	width: 190px
+	height: 190px
+	top: -110px
+	right: -103px
+	&::after
+		position: absolute
+		content: ''
+		background-color: #fff
+		bottom: 80px
+		width: 100%
+		height: 100%
+		left: 0
+
+.general__circle-orange
+	background: linear-gradient(to bottom, #ff6000, #ff8800)
+	position: absolute
+	border-radius: 50%
+	width: 120px
+	height: 120px
+	top: 188px
+	left: 110px
+
+.general__circle-big-border-gray
+	position: absolute
+	border-radius: 50%
+	width: 874px
+	height: 874px
+	top: -29px
+	left: 144px
+	background: transparent
+	border: 1px solid #f7f7f7
+
+.general__circle-small-border-gray
+	position: absolute
+	border-radius: 50%
+	width: 597px
+	height: 597px
+	top: 110px
+	left: 282px
+	background: transparent
+	border: 1px solid #f7f7f7
+
+.general__all-tv
+	position: absolute
+	top: 236px
+	right: 71px
+	left: auto
+	width: 909px
+	height: 341px
+	background: url("../images/general-vse-tv.png") no-repeat top
+	background-size: auto
+
+.general__gadget
+	position: absolute
+	top: 220px
+	right: 155px
+	left: auto
+	width: 610px
+	height: 527px
+	background: url("../images/general-gadget.png") no-repeat top
 
 .is-overflow-hidden
 	overflow: hidden
+
+.small-title
+	font-family: 'HelveticaNeueCyr', Helvetica
+	font-weight: 100
+	font-size: 44px
+	width: 500px
+	text-align: center
+	margin: 0 auto
+	line-height: 1
+
+.small-title_fz38
+	font-size: 38px
+
+.general__circle-white-big
+	position: absolute
+	border-radius: 50%
+	background-color: rgba(#fff, 0.2)
+	width: 183px
+	height: 183px
+	top: 440px
+	right: 331px
+	display: flex
+	align-items: center
+	justify-content: center
+
+.general__circle-white-medium
+	position: relative
+	background-color: rgba(#fff, 0.5)
+	border-radius: 50%
+	width: 144px
+	height: 144px
+	display: flex
+	align-items: center
+	justify-content: center
+
+.general__circle-white-small
+	position: relative
+	background-color: rgba(#fff, 1)
+	border-radius: 50%
+	width: 108px
+	height: 108px
+	display: flex
+	align-items: center
+	justify-content: center
+
+.general__logo
+	background: url("../images/vse-tv-logo.png") no-repeat top
+	width: 141px
+	height: 100px
+
+.general__logo-66x47
+	background: url("../images/vse-tv-logo-66x47.png") no-repeat top
+	width: 66px
+	height: 47px
+
+.tasks-grid
+	display: flex
+	justify-content: space-between
+
+.tasks-grid__item
+	flex-shrink: 0
+
+.tasks-grid__item_w410
+	width: 410px
+
+.tasks-grid__item_w400
+	width: 400px
+
+.tasks-grid-item__title
+	position: relative
+	font-family: "HelveticaNeueCyr", Helvetica
+	font-weight: 100
+	font-size: 30px
+	padding-right: 20px
+	&::after
+		position: absolute
+		border-radius: 50%
+		content: ''
+		width: 16px
+		height: 16px
+		background: linear-gradient(to bottom, #ff6707, #ff8d0b)
+		top: 50%
+		transform: translateY(-50%)
+		right: -20px
+	&::before
+		position: absolute
+		border-radius: 50%
+		content: ''
+		width: 16px
+		height: 16px
+		background: linear-gradient(to bottom, #07acff, #05c2ff)
+		top: 50%
+		transform: translateY(-50%)
+		right: -46px
+
+.tasks-grid-item__paragraph
+	font-family: "HelveticaNeueCyr"
+	font-weight: 300
+	font-size: 15px
+	color: #000000
+	line-height: 1.6
+
+.tasks-hashtags
+	display: flex
+	flex-wrap: wrap
+	margin-right: -9px
+	margin-bottom: -10px
+
+.tasks-hashtags__item
+	padding-bottom: 10px
+	padding-right: 9px
+	display: flex
+
+.hashtag
+	font-size: 13px
+	color: #5e5e5e
+	border: 1px solid #00a9ff
+	border-radius: 25px
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	padding: 6px 24px 9px 18px
+	cursor: pointer
+	&:hover
+		color: #FFFFFF
+		background-color: #00a9ff
+	&.is-filled
+		color: #FFFFFF
+		background-color: #00a9ff
+		&:hover
+			color: #5e5e5e
+			background-color: transparent
+			
+.hashtag_dots
+	color: #00a9ff
+	font-size: 33px
+	line-height: 0
+	padding: 0 17px

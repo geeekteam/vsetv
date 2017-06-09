@@ -9,7 +9,7 @@
 }
 
 .fri-qube-logo {
-  background-image: url('../images/icons-s0aeb2b1c4e.png');
+  background-image: url('../images/icons-s3ca6444270.png');
   background-position: 0 -136px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -20,8 +20,8 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-qube-logo {
-    background-image: url('../images/icons-2x-s07c654e3fd.png');
-    background-size: 141px auto;
+    background-image: url('../images/icons-2x-sc56825b6a5.png');
+    background-size: 155px auto;
     background-position: 0 -68px;
     height: 79px;
     width: 75px;
@@ -29,7 +29,7 @@
 }
 
 .fri-logo {
-  background-image: url('../images/icons-s0aeb2b1c4e.png');
+  background-image: url('../images/icons-s3ca6444270.png');
   background-position: 0 -91px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -40,8 +40,8 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-logo {
-    background-image: url('../images/icons-2x-s07c654e3fd.png');
-    background-size: 141px auto;
+    background-image: url('../images/icons-2x-sc56825b6a5.png');
+    background-size: 155px auto;
     background-position: 0 -46px;
     height: 20px;
     width: 141px;
@@ -49,7 +49,7 @@
 }
 
 .fri-arrow-white {
-  background-image: url('../images/icons-s0aeb2b1c4e.png');
+  background-image: url('../images/icons-s3ca6444270.png');
   background-position: 0 -52px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -60,8 +60,8 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-arrow-white {
-    background-image: url('../images/icons-2x-s07c654e3fd.png');
-    background-size: 141px auto;
+    background-image: url('../images/icons-2x-sc56825b6a5.png');
+    background-size: 155px auto;
     background-position: 0 -26px;
     height: 17px;
     width: 34px;
@@ -69,7 +69,7 @@
 }
 
 .fri-arrow-dark {
-  background-image: url('../images/icons-s0aeb2b1c4e.png');
+  background-image: url('../images/icons-s3ca6444270.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -80,8 +80,8 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .fri-arrow-dark {
-    background-image: url('../images/icons-2x-s07c654e3fd.png');
-    background-size: 141px auto;
+    background-image: url('../images/icons-2x-sc56825b6a5.png');
+    background-size: 155px auto;
     background-position: 0 0;
     height: 11px;
     width: 21px;
@@ -89,7 +89,7 @@
 }
 
 .top-nav__back:hover .fri-arrow-dark {
-  background-image: url('../images/icons-s0aeb2b1c4e.png');
+  background-image: url('../images/icons-s3ca6444270.png');
   background-position: 0 -26px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -100,11 +100,31 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .top-nav__back:hover .fri-arrow-dark {
-    background-image: url('../images/icons-2x-s07c654e3fd.png');
-    background-size: 141px auto;
+    background-image: url('../images/icons-2x-sc56825b6a5.png');
+    background-size: 155px auto;
     background-position: 0 -13px;
     height: 11px;
     width: 21px;
+  }
+}
+
+.fri-rostelecom-logo {
+  background-image: url('../images/icons-s3ca6444270.png');
+  background-position: 0 -220px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 63px;
+  width: 155px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .fri-rostelecom-logo {
+    background-image: url('../images/icons-2x-sc56825b6a5.png');
+    background-size: 155px auto;
+    background-position: 0 -149px;
+    height: 63px;
+    width: 155px;
   }
 }
 
@@ -163,6 +183,13 @@ body {
   font-family: "Helvetica Neue";
   font-weight: 300;
   font-size: 17px;
+  color: #000000;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 
 .site-wrapper {
@@ -178,6 +205,8 @@ body {
 .block {
   position: relative;
   width: 100%;
+  max-width: 2560px;
+  margin: 0 auto;
 }
 
 .container {
@@ -189,8 +218,21 @@ body {
   height: 100%;
 }
 
+.container-910 {
+  position: relative;
+  max-width: 910px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 100%;
+}
+
 .container_910 {
   max-width: 910px;
+}
+
+.container_955 {
+  max-width: 955px;
 }
 
 .container_1070 {
@@ -204,6 +246,10 @@ body {
 .flex {
   display: -ms-flexbox;
   display: flex;
+}
+
+.display-block {
+  display: block;
 }
 
 .flex-column {
@@ -245,16 +291,314 @@ body {
   text-align: center;
 }
 
-.circle {
-  width: 189px;
-  height: 189px;
-  margin-top: -108px;
-  margin-left: auto;
-  margin-right: -103px;
-  background-color: #00a8ff;
+.centered {
+  margin: 0 auto;
+}
+
+.general {
+  height: 738px;
+}
+
+.general__circle-blue {
+  position: absolute;
   border-radius: 50%;
+  background-color: #00a8ff;
+  width: 190px;
+  height: 190px;
+  top: -110px;
+  right: -103px;
+}
+.general__circle-blue::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  bottom: 80px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.general__circle-orange {
+  background: linear-gradient(to bottom, #ff6000, #ff8800);
+  position: absolute;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  top: 188px;
+  left: 110px;
+}
+
+.general__circle-big-border-gray {
+  position: absolute;
+  border-radius: 50%;
+  width: 874px;
+  height: 874px;
+  top: -29px;
+  left: 144px;
+  background: transparent;
+  border: 1px solid #f7f7f7;
+}
+
+.general__circle-small-border-gray {
+  position: absolute;
+  border-radius: 50%;
+  width: 597px;
+  height: 597px;
+  top: 110px;
+  left: 282px;
+  background: transparent;
+  border: 1px solid #f7f7f7;
+}
+
+.general__all-tv {
+  position: absolute;
+  top: 236px;
+  right: 71px;
+  left: auto;
+  width: 909px;
+  height: 341px;
+  background: url("../images/general-vse-tv.png") no-repeat top;
+  background-size: auto;
+}
+
+.general__gadget {
+  position: absolute;
+  top: 220px;
+  right: 155px;
+  left: auto;
+  width: 610px;
+  height: 527px;
+  background: url("../images/general-gadget.png") no-repeat top;
 }
 
 .is-overflow-hidden {
   overflow: hidden;
+}
+
+.small-title {
+  font-family: "HelveticaNeueCyr", Helvetica;
+  font-weight: 100;
+  font-size: 44px;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.small-title_fz38 {
+  font-size: 38px;
+}
+
+.general__circle-white-big {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 183px;
+  height: 183px;
+  top: 440px;
+  right: 331px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.general__circle-white-medium {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 144px;
+  height: 144px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.general__circle-white-small {
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  width: 108px;
+  height: 108px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.general__logo {
+  background: url("../images/vse-tv-logo.png") no-repeat top;
+  width: 141px;
+  height: 100px;
+}
+
+.general__logo-66x47 {
+  background: url("../images/vse-tv-logo-66x47.png") no-repeat top;
+  width: 66px;
+  height: 47px;
+}
+
+.tasks-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.tasks-grid__item {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.tasks-grid__item_w410 {
+  width: 410px;
+}
+
+.tasks-grid__item_w400 {
+  width: 400px;
+}
+
+.tasks-grid-item__title {
+  position: relative;
+  font-family: "HelveticaNeueCyr", Helvetica;
+  font-weight: 100;
+  font-size: 30px;
+  padding-right: 20px;
+}
+.tasks-grid-item__title::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(to bottom, #ff6707, #ff8d0b);
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+}
+.tasks-grid-item__title::before {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(to bottom, #07acff, #05c2ff);
+  top: 50%;
+  transform: translateY(-50%);
+  right: -46px;
+}
+
+.tasks-grid-item__paragraph {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.tasks-hashtags {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -9px;
+  margin-bottom: -10px;
+}
+
+.tasks-hashtags__item {
+  padding-bottom: 10px;
+  padding-right: 9px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hashtag {
+  font-size: 13px;
+  color: #5e5e5e;
+  border: 1px solid #00a9ff;
+  border-radius: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 24px 9px 18px;
+  cursor: pointer;
+}
+.hashtag:hover {
+  color: #FFFFFF;
+  background-color: #00a9ff;
+}
+.hashtag.is-filled {
+  color: #FFFFFF;
+  background-color: #00a9ff;
+}
+.hashtag.is-filled:hover {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+
+.hashtag_dots {
+  color: #00a9ff;
+  font-size: 33px;
+  line-height: 0;
+  padding: 0 17px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+.mb7 {
+  margin-bottom: 7px;
+}
+
+.mb13 {
+  margin-bottom: 13px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb23 {
+  margin-bottom: 23px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb35 {
+  margin-bottom: 35px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mr105 {
+  margin-right: 105px;
+}
+
+.fz38 {
+  font-size: 38px;
 }
