@@ -250,24 +250,45 @@
         return plugin;
     };
 
+    YOURAPPNAME.prototype.designSlider = function () {
+        $('.jq-design-slider').owlCarousel({
+            items: 3,
+            loop: true,
+            autoWidth: false
+        });
+        // var designSlider = $('.jq-design-slider'),
+        //     slides = designSlider.find('.owl-item');
+        //
+        // slides.each(function () {
+        //     if ($(this).hasClass('active'))
+        //         console.log(slides.find(':eq(0)'));
+        // })
+
+/*        firstActiveSlide.addClass('first-active-slide');
+        secondActiveSlide.addClass('second-active-slide');
+        thirdActiveSlide.addClass('third-active-slide');*/
+    };
+
     var app = new YOURAPPNAME(document);
 
     app.appLoad('loading', function () {
-        console.log('App is loading... Paste your app code here.');
         // App is loading... Paste your app code here. 4example u can run preloader event here and stop it in action appLoad dom or full
     });
 
     app.appLoad('dom', function () {
-        console.log('DOM is loaded! Paste your app code here (Pure JS code).');
         // DOM is loaded! Paste your app code here (Pure JS code).
         // Do not use jQuery here cause external libs do not loads here...
 
-        app.initSwitcher(); // data-switcher="{target: 'anything'}" , data-switcher-target="anything"
+        // app.initSwitcher(); // data-switcher="{target: 'anything'}" , data-switcher-target="anything"
     });
 
     app.appLoad('full', function (e) {
-        console.log('App was fully load! Paste external app source code here... For example if your use jQuery and something else');
         // App was fully load! Paste external app source code here... 4example if your use jQuery and something else
         // Please do not use jQuery ready state function to avoid mass calling document event trigger!
+
+
+
+
+        app.designSlider();
     });
 })();
