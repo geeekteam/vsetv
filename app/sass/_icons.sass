@@ -1,0 +1,43 @@
+.fri
+	display: inline-block
+	vertical-align: middle
+
+.fri-qube-logo
+	+sprite(qube-logo)
+
+.fri-logo
+	+sprite(logo)
+
+.fri-arrow-white
+	+sprite(arrow-white)
+
+.fri-arrow-dark
+	+sprite(arrow-dark)
+
+.nav__back
+	> a
+		&:hover
+			.fri-arrow-dark
+				+sprite(arrow-blue)
+
+.fri-rostelecom-logo
+	+sprite(rostelecom-logo)
+
+.fri-star
+	+sprite(star)
+
+.fri-camera
+	+sprite(my-collection-camera)
+
+.vsetv-wrapper
+
+	.pagenavi .pagenavi__post.is-left a
+		&:hover
+			&::before
+				+sprite(arrow-left-blue)
+
+	.pagenavi .pagenavi__post.is-right a
+		&:hover
+			&::before
+				transform: rotate(180deg)
+				+sprite(arrow-left-blue)

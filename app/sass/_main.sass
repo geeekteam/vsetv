@@ -14,18 +14,23 @@ body
 	font-weight: 300
 	font-size: 17px
 	color: #000000
+	background-color: #fff
 
 p
 	padding: 0
 	margin: 0
 	line-height: 1
 
-.site-wrapper
+div
+	display: block
+
+.vsetv-wrapper
 	width: 100%
 	position: relative
 	z-index: 10
 	display: flex
 	flex-direction: column
+	overflow: hidden
 
 .block
 	position: relative
@@ -40,6 +45,11 @@ p
 	padding: 0 20px
 	margin: 0 auto
 	height: 100%
+	&::after
+		clear: both
+	&::before
+		content: ''
+		display: table
 
 .container-910
 	position: relative
@@ -48,6 +58,11 @@ p
 	padding: 0 20px
 	margin: 0 auto
 	height: 100%
+	&::after
+		clear: both
+	&::before
+		content: ''
+		display: table
 
 .container_910
 	max-width: 910px
@@ -98,7 +113,7 @@ p
 	margin: 0 auto
 
 .general
-	height: 738px
+	height: 836px
 	
 .general__circle-blue
 	position: absolute
@@ -106,7 +121,7 @@ p
 	background-color: #00a8ff
 	width: 190px
 	height: 190px
-	top: -110px
+	top: -6px
 	right: -103px
 	&::after
 		position: absolute
@@ -335,7 +350,7 @@ p
 	flex-shrink: 0
 	font-weight: 300
 	font-size: 15px
-	padding-top: 43px
+	padding-top: 41px
 	line-height: 1.6
 
 .short-description-grid__center-item
@@ -351,7 +366,7 @@ p
 	flex-shrink: 0
 	font-size: 15px
 	font-weight: 300
-	padding-top: 43px
+	padding-top: 41px
 	line-height: 1.6
 	margin-left: -75px
 
@@ -383,6 +398,7 @@ p
 	font-weight: 900
 	text-align: center
 	letter-spacing: -9px
+	line-height: 1.15
 
 .design-slider
 	position: relative
@@ -418,6 +434,36 @@ p
 					transform: scale(1)
 					z-index: 1
 
+.design-slider__carousel
+	.owl-nav
+		position: absolute
+		top: 347px
+
+		.owl-prev
+			position: absolute
+			left: -92px
+			background: url("../images/arrow-slider.png") no-repeat center
+			background-color: transparent
+			width: 65px
+			height: 65px
+			border-radius: 50%
+			&:hover
+				background: url("../images/arrow-slider-blue.png") no-repeat center
+				background-color: #FFFFFF
+		.owl-next
+			position: absolute
+			left: 874px
+			background: url("../images/arrow-slider.png") no-repeat center
+			background-color: transparent
+			width: 65px
+			height: 65px
+			transform: rotate(180deg)
+			border-radius: 50%
+			&:hover
+				background: url("../images/arrow-slider-blue.png") no-repeat center
+				background-color: #FFFFFF
+
+
 .design-slider__slide
 	background: url("../images/design-slide-1.png") no-repeat center bottom / contain
 	width: 100%
@@ -445,6 +491,7 @@ p
 	background-image: url("../images/design-slide-7.png")
 
 .tv-guide
+	position: relative
 	z-index: 100
 	margin-bottom: 90px
 
@@ -494,23 +541,27 @@ p
 	top: 0
 	background-color: transparent
 	background: url('../images/tv-guide-1.png') no-repeat
-	width: 100%
-	height: 100%
 
 .tv-guide__image_1
 	background-image: url('../images/tv-guide-1.png')
 	top: 98px
 	left: 4px
+	width: 981px
+	height: 644px
 
 .tv-guide__image_2
 	background-image: url('../images/tv-guide-2.png')
 	left: 258px
 	top: 69px
+	width: 978px
+	height: 643px
 
 .tv-guide__image_3
 	background-image: url('../images/tv-guide-3.png')
 	left: 507px
 	top: 39px
+	width: 986px
+	height: 647px
 
 .arrow
 	font-family: "PT Sans"
@@ -589,6 +640,7 @@ p
 .collection
 	height: 962px
 	background-color: #f9f9f9
+	z-index: 10
 
 .collection__paragraph
 	font-size: 15px
@@ -704,6 +756,7 @@ p
 	background-color: #e0e5e8
 	padding-top: 130px
 	height: 724px
+	position: relative
 
 .my-collection-wrapper
 	position: relative
@@ -735,6 +788,7 @@ p
 	display: flex
 	flex-direction: column
 	padding-top: 40px
+	line-height: 1.15
 	
 .profile__name
 	font-size: 16px
@@ -816,3 +870,303 @@ p
 		&:last-child
 			margin-bottom: 0
 
+.tv-guide__circle-blue
+	position: absolute
+	border-radius: 50%
+	background-color: #00a8ff
+	width: 151px
+	height: 151px
+	top: 225px
+	left: -57px
+
+.my-collection__circle-blue
+	position: absolute
+	border-radius: 50%
+	background-color: #00a8ff
+	width: 204px
+	height: 204px
+	bottom: 53px
+	right: 93px
+
+.tags
+	height: 1079px
+
+.section-number_tags
+	margin-top: -86px
+	margin-bottom: 89px
+
+.tags__title
+	font-size: 94.92px
+	font-weight: 900
+	text-align: center
+	text-transform: uppercase
+	line-height: 0.83
+	margin-bottom: 10px
+
+.tags__title-text-orange
+	color: #ff6000
+	padding-left: 33px
+
+.tags__title-text-blue
+	color: #00a8ff
+
+.tags__small-title
+	font-weight: 100
+	font-size: 30px
+	text-align: center
+	padding-left: 35px
+	
+.tags-gadgets
+	position: relative
+
+.tags-gadget
+	position: absolute
+	background-repeat: no-repeat
+
+.tags-gadget_1
+	background-image: url("../images/tags-gadget-1.png")
+	width: 254px
+	height: 516px
+	top: 71px
+	left: 97px
+
+.tags-gadget_2
+	background-image: url("../images/tags-gadget-2.png")
+	width: 201px
+	height: 572px
+	top: 31px
+	left: 278px
+
+.text-orange
+	color: #ff6000
+
+.tags-descr
+	position: absolute
+	width: 360px
+	top: 406px
+	right: 135px
+	text-align: left
+
+.tags-descr__title
+	font-weight: 100
+	font-size: 38px
+	color: #ff6000
+	margin-bottom: 21px
+	line-height: 1.15
+
+.tags-descr__text
+	font-size: 15px
+	font-weight: 300
+	line-height: 1.5
+	p
+		line-height: 1.5
+
+.section-number_conclusion
+	margin-top: -42px
+	margin-bottom: 98px
+	&::after
+		top: 114px
+
+.conclusion
+	position: relative
+	background-color: #00a8ff
+	height: 992px
+		
+.conclusion__title
+	font-weight: 300
+	font-size: 36px
+	color: #FFFFFF
+	text-align: center
+	margin: 0 auto
+	width: 650px
+	line-height: 1.1
+
+.conclusion__circle-big
+	position: absolute
+	width: 874px
+	height: 874px
+	border-radius: 50%
+	border: 1px solid #FFFFFF
+	opacity: 0.3
+	top: 45px
+	left: 145px
+
+.conclusion__circle-small
+	position: absolute
+	border-radius: 50%
+	border: 1px solid #e0e0e0
+	width: 597px
+	height: 597px
+	top: 185px
+	left: 285px
+
+.conlcusion__all
+	position: absolute
+	font-size: 189.9px
+	color: #FFFFFF
+	font-weight: 900
+	text-transform: uppercase
+	left: 60px
+	top: 362px
+	letter-spacing: -9px
+
+
+.conclusion__tv
+	position: absolute
+	font-size: 189.9px
+	color: #ff6000
+	font-weight: 900
+	text-transform: uppercase
+	left: 744px
+	top: 362px
+	letter-spacing: -9px
+
+.conclusion__circle-white
+	position: absolute
+	top: 304px
+	left: 415px
+	width: 340.5px
+	height: 340.5px
+	background-color: #fff
+	border-radius: 50%
+	z-index: 10
+
+.counclusion__gadget
+	background: url("../images/conclusion-gadget.png") no-repeat
+	position: absolute
+	top: 300px
+	left: 280px
+	width: 610px
+	height: 529px
+	z-index: 20
+	
+.conclusion__bottom-text
+	position: absolute
+	font-size: 15px
+	font-weight: 300
+	color: #2d2d2d
+	width: 700px
+	text-align: center
+	bottom: 189px
+	left: 170px
+	line-height: 1.6
+	z-index: 100
+
+.conclusion__rostelcom
+	position: absolute
+	bottom: 87px
+	left: 409px
+	width: 221px
+	height: 65px
+	background: url("../images/rostelcom.png") no-repeat
+	z-index: 100
+
+.conclusion__circle-orange-top
+	position: absolute
+	top: 133px
+	right: -80px
+	width: 176px
+	height: 176px
+	background: url("../images/conclusion-orange-circle-top.png") no-repeat
+
+.conclusion__circle-blue-bottom
+	position: absolute
+	bottom: -187px
+	left: 8px
+	width: 338px
+	height: 338px
+	background: url("../images/conclusion-circle-blue-bottom.png") no-repeat
+
+.vsetv-wrapper
+	.nav-white .nav__menu .nav__menu__contacts .btn
+		font-family: "Bello Pro"
+		&:hover
+			color: #FFFFFF
+			background-color: #04a9ff
+			border-color: #04a9ff
+
+	.nav-white .nav__back a
+		&:hover
+			color: #04a9ff
+
+	.nav-white
+		height: 113px
+
+	.pagenavi .pagenavi__post a .pagenavi__cell
+		font-family: "HelveticaNeueCyr"
+		font-size: 16px
+		font-weight: 300
+		padding: 0 50px
+
+
+	.pagenavi .pagenavi__post a
+		color: #000
+		&:hover
+			border-color: #04a9ff
+			color: #04a9ff
+
+	.link_site
+		text-align: center
+
+	.pagenavi
+		padding-top: 70px
+		padding-bottom: 80px
+
+	.link_site
+		margin-bottom: 45px
+
+	.main_btn
+		font-family: "Bello Pro"
+		display: inline-block
+		font-size: 20px
+		color: #FFFFFF
+		border: 2px solid #04a9ff
+		background-color: #04a9ff
+		padding: 5px 30px
+		&:hover
+			text-decoration: none
+			color: #04a9ff
+			background-color: #fff
+			border-color: #04a9ff
+	.feedback
+		padding-top: 90px
+
+	.feedback .feedback__desktop p,
+	.feedback .feedback__desktop a,
+	.feedback__name
+		font-family: "HelveticaNeueCyr"
+
+	.feedback__name
+		font-weight: 200
+		margin-bottom: 50px
+
+	.feedback .feedback__email .form-group .btn
+		font-family: "Bello Pro"
+		border-radius: 0
+		height: auto
+		background-color: transparent
+		font-size: 28px
+		color: #464646
+		border: 3px solid #464646
+		padding-top: 11px
+		padding-bottom: 11px
+		&:hover
+			background-color: #04a9ff
+			border-color: #04a9ff
+			color: #FFFFFF
+	
+	.vista
+		background-color: #04a9ff
+
+	.vista,
+	.vista__name,
+	.vista p,
+	.vista span
+		font-family: "HelveticaNeueCyr"
+
+	.section__space b
+		background-color: #04a9ff
+		
+	.contacts
+		background-image: url("../images/background.jpg")
+		background-size: cover

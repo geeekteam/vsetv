@@ -6,13 +6,13 @@ Error: Undefined mixin 'sprite'.
 1: .fri
 2: 	display: inline-block
 3: 	vertical-align: middle
-4: 
+4:
 5: .fri-qube-logo
 6: 	+sprite(qube-logo)
-7: 
+7:
 8: .fri-logo
 9: 	+sprite(logo)
-10: 
+10:
 11: .fri-arrow-white
 
 Backtrace:

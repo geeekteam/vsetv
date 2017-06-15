@@ -254,19 +254,11 @@
         $('.jq-design-slider').owlCarousel({
             items: 3,
             loop: true,
-            autoWidth: false
+            autoWidth: false,
+            nav: true,
+            navText: '',
+            mouseDrag: false
         });
-        // var designSlider = $('.jq-design-slider'),
-        //     slides = designSlider.find('.owl-item');
-        //
-        // slides.each(function () {
-        //     if ($(this).hasClass('active'))
-        //         console.log(slides.find(':eq(0)'));
-        // })
-
-/*        firstActiveSlide.addClass('first-active-slide');
-        secondActiveSlide.addClass('second-active-slide');
-        thirdActiveSlide.addClass('third-active-slide');*/
     };
 
     var app = new YOURAPPNAME(document);
