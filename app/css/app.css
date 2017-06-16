@@ -427,7 +427,7 @@ div {
 .general__gadget {
   position: absolute;
   top: 220px;
-  right: 155px;
+  right: 185px;
   left: auto;
   width: 610px;
   height: 527px;
@@ -1313,6 +1313,7 @@ div {
 }
 
 .tags__title {
+  visibility: visible !important;
   font-size: 94.92px;
   font-weight: 900;
   text-align: center;
@@ -1533,6 +1534,7 @@ div {
 }
 .vsetv-wrapper .nav-white {
   height: 113px;
+  position: absolute;
 }
 .vsetv-wrapper .pagenavi .pagenavi__post a .pagenavi__cell {
   font-family: "HelveticaNeueCyr";

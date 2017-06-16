@@ -261,6 +261,42 @@
         });
     };
 
+    YOURAPPNAME.prototype.wowOffset = function () {
+        var windowHeight = document.documentElement.clientHeight,
+            myElem = $('.jq-element'),
+            myElemWrapper = $('.jq-element-wrapper');
+
+        console.log(
+            windowHeight
+            -
+            ((myElem.offset().top
+            -
+            myElemWrapper.offset().top))
+        );
+
+        myElem.each(function () {
+            var $this = $(this),
+                elemWrapper = $(this).closest(myElemWrapper),
+                dataOffset;
+            if ($this.attr('data-element') === elemWrapper.attr('data-element-container')) {
+                dataOffset = windowHeight - ($this.offset().top - elemWrapper.offset().top);
+                $this.attr('data-wow-offset',dataOffset)
+            }
+                console.log('hi')
+
+            // if (this.hasAttribute('data-top-element-container')) {
+            //     var dataTopElementDistance
+            // }
+        })
+        // myElem.each(function () {
+        //     if (this.hasAttribute('data-top-element-distance')) {
+        //         var dataTopElementDistance = parseInt($(this).attr('data-top-element-distance'));
+        //         $(this).attr('data-wow-offset', windowHeight - dataTopElementDistance)
+        //     }
+        // })
+
+    };
+
     var app = new YOURAPPNAME(document);
 
     app.appLoad('loading', function () {
@@ -280,7 +316,10 @@
 
 
 
+        new WOW().init();
 
         app.designSlider();
+
+        app.wowOffset();
     });
 })();
