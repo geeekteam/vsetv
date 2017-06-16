@@ -450,6 +450,15 @@ div
 			&:hover
 				background: url("../images/arrow-slider-blue.png") no-repeat center
 				background-color: #FFFFFF
+			&::after
+				position: absolute
+				content: ''
+				width: 245px
+				height: 460px
+				background: transparent
+				top: -180px
+				left: 90px
+
 		.owl-next
 			position: absolute
 			left: 874px
@@ -462,7 +471,14 @@ div
 			&:hover
 				background: url("../images/arrow-slider-blue.png") no-repeat center
 				background-color: #FFFFFF
-
+			&::before
+				position: absolute
+				content: ''
+				width: 245px
+				height: 460px
+				background: transparent
+				top: -215px
+				left: 90px
 
 .design-slider__slide
 	background: url("../images/design-slide-1.png") no-repeat center bottom / contain

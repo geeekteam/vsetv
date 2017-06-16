@@ -768,6 +768,15 @@ div {
   background: url("../images/arrow-slider-blue.png") no-repeat center;
   background-color: #FFFFFF;
 }
+.design-slider__carousel .owl-nav .owl-prev::after {
+  position: absolute;
+  content: "";
+  width: 245px;
+  height: 460px;
+  background: transparent;
+  top: -180px;
+  left: 90px;
+}
 .design-slider__carousel .owl-nav .owl-next {
   position: absolute;
   left: 874px;
@@ -781,6 +790,15 @@ div {
 .design-slider__carousel .owl-nav .owl-next:hover {
   background: url("../images/arrow-slider-blue.png") no-repeat center;
   background-color: #FFFFFF;
+}
+.design-slider__carousel .owl-nav .owl-next::before {
+  position: absolute;
+  content: "";
+  width: 245px;
+  height: 460px;
+  background: transparent;
+  top: -215px;
+  left: 90px;
 }
 
 .design-slider__slide {
