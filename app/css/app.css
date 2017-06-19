@@ -382,13 +382,13 @@ div {
 }
 
 .general__circle-orange {
-  background: linear-gradient(to bottom, #ff6000, #ff8800);
+  background: url("../images/general-circle-orange.png");
   position: absolute;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 182px;
   top: 188px;
-  left: 110px;
+  left: 80px;
 }
 
 .general__circle-big-border-gray {
@@ -399,7 +399,7 @@ div {
   top: -29px;
   left: 144px;
   background: transparent;
-  border: 1px solid #f7f7f7;
+  border: 1px solid rgba(224, 224, 224, 0.3);
 }
 
 .general__circle-small-border-gray {
@@ -410,7 +410,7 @@ div {
   top: 110px;
   left: 282px;
   background: transparent;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #e0e0e0;
 }
 
 .general__all-tv {
@@ -427,9 +427,8 @@ div {
 .general__gadget {
   position: absolute;
   top: 220px;
-  right: 185px;
-  left: auto;
-  width: 610px;
+  left: 285px;
+  width: 1390px;
   height: 527px;
   background: url("../images/general-gadget.png") no-repeat top;
 }
@@ -506,6 +505,16 @@ div {
   background: url("../images/vse-tv-logo-66x47.png") no-repeat top;
   width: 66px;
   height: 47px;
+}
+
+.tasks-gray-circle {
+  position: absolute;
+  width: 189px;
+  height: 189px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  top: 23px;
+  left: -579px;
 }
 
 .tasks-grid {
@@ -630,9 +639,9 @@ div {
   color: #f2f2f2;
   text-transform: uppercase;
   left: 161px;
-  top: 80px;
+  top: 60px;
   opacity: 0.5;
-  letter-spacing: -7px;
+  letter-spacing: -10px;
   z-index: -1;
 }
 
@@ -948,7 +957,7 @@ div {
 .arrow_1::before {
   position: absolute;
   content: "";
-  background-image: url("../images/target.png") no-repeat;
+  background: url("../images/target.png") no-repeat;
   bottom: 134px;
   left: 147px;
   width: 40px;
@@ -1146,6 +1155,7 @@ div {
   padding-top: 130px;
   height: 724px;
   position: relative;
+  z-index: 10;
 }
 
 .my-collection-wrapper {
@@ -1307,6 +1317,27 @@ div {
   height: 1079px;
 }
 
+.tags-gray-circle-big {
+  position: absolute;
+  width: 874px;
+  height: 874px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  opacity: 0.3;
+  top: -215px;
+  left: 105px;
+}
+
+.tags-gray-circle-small {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  width: 597px;
+  height: 597px;
+  top: -75px;
+  left: 242px;
+}
+
 .section-number_tags {
   margin-top: -86px;
   margin-bottom: 89px;
@@ -1320,6 +1351,8 @@ div {
   text-transform: uppercase;
   line-height: 0.83;
   margin-bottom: 10px;
+  z-index: 10;
+  position: absolute;
 }
 
 .tags__title-text-orange {
@@ -1332,10 +1365,12 @@ div {
 }
 
 .tags__small-title {
+  position: absolute;
+  top: 258px;
+  left: 290px;
   font-weight: 100;
   font-size: 30px;
   text-align: center;
-  padding-left: 35px;
 }
 
 .tags-gadgets {
@@ -1475,7 +1510,7 @@ div {
   position: absolute;
   top: 300px;
   left: 280px;
-  width: 610px;
+  width: 1125px;
   height: 529px;
   z-index: 20;
 }
@@ -1610,6 +1645,7 @@ div {
 .vsetv-wrapper .vista p,
 .vsetv-wrapper .vista span {
   font-family: "HelveticaNeueCyr";
+  color: #000;
 }
 .vsetv-wrapper .section__space b {
   background-color: #04a9ff;
