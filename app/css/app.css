@@ -568,7 +568,7 @@ div {
 }
 
 .tasks-grid-item__paragraph {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr", Helvetica;
   font-weight: 300;
   font-size: 15px;
   color: #000000;
@@ -1386,7 +1386,7 @@ div {
   background-image: url("../images/tags-gadget-1.png");
   width: 254px;
   height: 516px;
-  top: 71px;
+  top: 279px;
   left: 97px;
 }
 
@@ -1394,7 +1394,7 @@ div {
   background-image: url("../images/tags-gadget-2.png");
   width: 201px;
   height: 572px;
-  top: 31px;
+  top: 240px;
   left: 278px;
 }
 
@@ -1572,7 +1572,7 @@ div {
   position: absolute;
 }
 .vsetv-wrapper .pagenavi .pagenavi__post a .pagenavi__cell {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr", Helvetica;
   font-size: 16px;
   font-weight: 300;
   padding: 0 50px;
@@ -1615,7 +1615,7 @@ div {
 .vsetv-wrapper .feedback .feedback__desktop p,
 .vsetv-wrapper .feedback .feedback__desktop a,
 .vsetv-wrapper .feedback__name {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr", HelveticaNeueCyr;
 }
 .vsetv-wrapper .feedback__name {
   font-weight: 200;
@@ -1644,7 +1644,7 @@ div {
 .vsetv-wrapper .vista__name,
 .vsetv-wrapper .vista p,
 .vsetv-wrapper .vista span {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr", HelveticaNeueCyr;
   color: #000;
 }
 .vsetv-wrapper .section__space b {
