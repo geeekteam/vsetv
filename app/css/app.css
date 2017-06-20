@@ -602,7 +602,7 @@ div {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 6px 24px 9px 18px;
+  padding: 8px 20px;
   cursor: pointer;
 }
 .hashtag:hover {
@@ -1338,7 +1338,7 @@ div {
 }
 
 .section-number_tags {
-  margin-top: -86px;
+  margin-top: -46px;
   margin-bottom: 89px;
 }
 
@@ -1365,7 +1365,7 @@ div {
 
 .tags__small-title {
   position: absolute;
-  top: 258px;
+  top: 295px;
   left: 290px;
   font-weight: 100;
   font-size: 30px;
@@ -1385,16 +1385,16 @@ div {
   background-image: url("../images/tags-gadget-1.png");
   width: 254px;
   height: 516px;
-  top: 389px;
-  left: 97px;
+  top: 407px;
+  left: 117px;
 }
 
 .tags-gadget_2 {
   background-image: url("../images/tags-gadget-2.png");
   width: 201px;
   height: 572px;
-  top: 350px;
-  left: 278px;
+  top: 367px;
+  left: 298px;
 }
 
 .text-orange {
@@ -1404,7 +1404,7 @@ div {
 .tags-descr {
   position: absolute;
   width: 360px;
-  top: 406px;
+  top: 444px;
   right: 135px;
   text-align: left;
 }
@@ -1529,7 +1529,7 @@ div {
 
 .conclusion__rostelcom {
   position: absolute;
-  top: 855px;
+  top: 841px;
   left: 409px;
   width: 221px;
   height: 65px;

@@ -262,19 +262,28 @@
     };
 
     YOURAPPNAME.prototype.wowOffset = function () {
-        var windowHeight = document.documentElement.clientHeight,
-            myElem = $('.jq-element'),
-            myElemWrapper = $('.jq-element-wrapper');
 
-        myElem.each(function () {
-            var $this = $(this),
-                elemWrapper = $(this).closest(myElemWrapper),
-                dataOffset;
-            if ($this.attr('data-element') === elemWrapper.attr('data-element-container')) {
-                dataOffset = windowHeight - ($this.offset().top - elemWrapper.offset().top);
-                $this.attr('data-wow-offset',dataOffset);
-            }
-        });
+        function calcOnResize() {
+            var windowHeight = document.documentElement.clientHeight,
+                myElem = $('.jq-element'),
+                myElemWrapper = $('.jq-element-wrapper');
+
+
+            myElem.each(function () {
+                var $this = $(this),
+                    elemWrapper = $(this).closest(myElemWrapper),
+                    dataOffset;
+                if ($this.attr('data-element') === elemWrapper.attr('data-element-container')) {
+                    dataOffset = windowHeight - ($this.offset().top - elemWrapper.offset().top);
+                    $this.attr('data-wow-offset', dataOffset);
+                }
+            });
+        }
+
+        calcOnResize();
+        $(window).resize(function () {
+            calcOnResize();
+        })
     };
 
     var app = new YOURAPPNAME(document);
