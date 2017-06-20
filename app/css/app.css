@@ -1343,7 +1343,6 @@ div {
 }
 
 .tags__title {
-  visibility: visible !important;
   font-size: 94.92px;
   font-weight: 900;
   text-align: center;
@@ -1351,15 +1350,17 @@ div {
   line-height: 0.83;
   margin-bottom: 10px;
   z-index: 10;
-  position: absolute;
+  position: relative;
 }
 
 .tags__title-text-orange {
   color: #ff6000;
+  display: block;
 }
 
 .tags__title-text-blue {
   color: #00a8ff;
+  display: block;
 }
 
 .tags__small-title {
