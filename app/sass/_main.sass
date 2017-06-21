@@ -135,8 +135,8 @@ div
 	background: url("../images/general-circle-orange.png")
 	position: absolute
 	border-radius: 50%
-	width: 180px
-	height: 182px
+	width: 185px
+	height: 185px
 	top: 188px
 	left: 80px
 
@@ -664,7 +664,7 @@ div
 .collection
 	height: 962px
 	background-color: #f9f9f9
-	z-index: 10
+	//z-index: 10
 
 .collection__paragraph
 	font-size: 15px
@@ -685,12 +685,14 @@ div
 	width: 334px
 	height: 650px
 	left: 97px
+	z-index: 10
 
 .collection__screen
 	position: absolute
 	background-repeat: no-repeat
 	height: 635px
 	top: 71px
+	z-index: 10
 
 .collection__screen_1
 	position: absolute
@@ -703,12 +705,14 @@ div
 	background-image: url("../images/collection-screen-2.png")
 	width: 405px
 	left: 372px
+	top: 72px
 
 .collection__screen_3
 	position: absolute
 	background-image: url("../images/collection-screen-3.png")
 	width: 429px
 	left: 529px
+	top: 72px
 
 .collection__price
 	position: absolute
@@ -725,6 +729,7 @@ div
 	top: 194px
 	left: 54px
 	border-radius: 5px
+	z-index: 20
 
 .collection__rating
 	position: absolute
@@ -742,6 +747,7 @@ div
 	left: 54px
 	border-radius: 5px
 	padding: 0 27px 0 20px
+	z-index: 20
 
 .fri-star
 	margin-right: 10px
@@ -775,13 +781,34 @@ div
 	background: url("../images/collection-fb.png") no-repeat
 	width: 99px
 	height: 99px
-	
+
+.collection-big-circle
+	position: absolute
+	width: 874px
+	height: 874px
+	border-radius: 50%
+	border: 1px solid #e0e0e0
+	background: transparent
+	display: flex
+	align-items: center
+	justify-content: center
+	top: 630px
+	left: -130px
+
+.collection-small-circle
+	position: relative
+	width: 597px
+	height: 597px
+	border-radius: 50%
+	border: 1px solid #e0e0e0
+	background: transparent
+
 .my-collection
 	background-color: #e0e5e8
 	padding-top: 130px
 	height: 724px
 	position: relative
-	z-index: 10
+	z-index: 2
 
 .my-collection-wrapper
 	position: relative
@@ -905,11 +932,10 @@ div
 	left: -57px
 
 .my-collection__circle-blue
+	background: url("../images/my-collection-circle-blue.png")
 	position: absolute
-	border-radius: 50%
-	background-color: #00a8ff
-	width: 204px
-	height: 204px
+	width: 286px
+	height: 286px
 	bottom: 53px
 	right: 93px
 
@@ -940,7 +966,7 @@ div
 	margin-bottom: 89px
 
 .tags__title
-	//visibility: visible !important
+	visibility: visible !important
 	font-size: 94.92px
 	font-weight: 900
 	text-align: center
@@ -1031,24 +1057,30 @@ div
 	width: 650px
 	line-height: 1.1
 
-.conclusion__circle-big
+.conclusion-circles-wrapper
 	position: absolute
+	top: 45px
+	left: 145px
+
+.conclusion__circle-big
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
 	width: 874px
 	height: 874px
 	border-radius: 50%
 	border: 1px solid #FFFFFF
 	opacity: 0.3
-	top: 45px
-	left: 145px
 
 .conclusion__circle-small
-	position: absolute
+	position: relative
 	border-radius: 50%
 	border: 1px solid #e0e0e0
 	width: 597px
 	height: 597px
-	top: 185px
-	left: 285px
+	//top: 185px
+//left: 285px
 
 .conlcusion__all
 	position: absolute
@@ -1223,8 +1255,3 @@ div
 	.contacts
 		background-image: url("../images/background.jpg")
 		background-size: cover
-
-//.general-wrapper
-//	position: absolute
-//	width: 3000px
-//	height: 100%

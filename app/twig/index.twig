@@ -12,7 +12,7 @@
                 <div class="general__circle-big-border-gray wow fadeIn" data-wow-delay="1s"></div>
                 <div class="general__circle-small-border-gray wow fadeIn" data-wow-delay="1s"></div>
                 <div class="general__circle-orange wow fadeIn" data-wow-delay="1.3s"></div>
-                <div class="general__all-tv wow fadeInRight"></div>
+                <div class="general__all-tv wow fadeInLeft"></div>
                 <div class="general__gadget wow fadeInRight" data-wow-delay="0.5s"></div>
                 <div class="general__circle-white-big wow fadeIn" data-wow-delay="1.3s">
                     <div class="general__circle-white-medium wow fadeIn" data-wow-delay="1.6s">
@@ -104,7 +104,7 @@
     </div>
 
     <div class="tv-guide jq-element-wrapper" data-element-container="tv-guide">
-        <div class="tv-guide__circle-blue"></div>
+        {#<div class="tv-guide__circle-blue"></div>#}
         <div class="container">
             <div class="section-number">1</div>
             <div class="small-title fz36 mb17">Теле-гид</div>
@@ -113,17 +113,20 @@
             </div>
         </div>
         <div class="tv-guide-images">
-            <div class="tv-guide__image tv-guide__image_1 wow fadeInRight jq-element" data-wow-offset="" data-element="tv-guide"></div>
-            <div class="tv-guide__image tv-guide__image_2 wow fadeInRight jq-element" data-wow-delay="0.5s" data-wow-offset="" data-element="tv-guide"></div>
-            <div class="tv-guide__image tv-guide__image_3 wow fadeInRight jq-element" data-wow-delay="1s" data-wow-offset="" data-element="tv-guide"></div>
-            <div class="arrow arrow_1 wow fadeIn jq-element" data-wow-delay="2.5s" data-wow-offset="" data-element="tv-guide">Подробная карточка телепередачи</div>
-            <div class="arrow arrow_2 wow fadeIn jq-element" data-wow-delay="1.5s" data-wow-offset="" data-element="tv-guide">Фильтрация по тематикам</div>
-            <div class="arrow arrow_3 wow fadeIn jq-element" data-wow-delay="2s" data-wow-offset="" data-element="tv-guide">Программы, которые прямо сейчас идут на канале, подсвечиваются, что очень удобно</div>
+            <div class="tv-guide__image tv-guide__image_1 wow fadeInRight jq-element" data-wow-offset="" data-element="tv-guide" data-wow-duration="1.3s"></div>
+            <div class="tv-guide__image tv-guide__image_2 wow fadeInRight jq-element" data-wow-duration="1.3s" data-wow-delay="0.5s" data-wow-offset="" data-element="tv-guide"></div>
+            <div class="tv-guide__image tv-guide__image_3 wow fadeInRight jq-element" data-wow-duration="1.3s" data-wow-delay="1s" data-wow-offset="" data-element="tv-guide"></div>
+            <div class="arrow arrow_1 wow fadeIn jq-element" data-wow-duration="1.1s" data-wow-delay="2.5s" data-wow-offset="" data-element="tv-guide">Подробная карточка телепередачи</div>
+            <div class="arrow arrow_2 wow fadeIn jq-element" data-wow-duration="1.1s" data-wow-delay="1.5s" data-wow-offset="" data-element="tv-guide">Фильтрация по тематикам</div>
+            <div class="arrow arrow_3 wow fadeIn jq-element" data-wow-duration="1.1s" data-wow-delay="2s" data-wow-offset="" data-element="tv-guide">Программы, которые прямо сейчас идут на канале, подсвечиваются, что очень удобно</div>
         </div>
     </div>
-
     <div class="collection jq-element-wrapper" data-element-container="collection">
+
         <div class="container">
+            <div class="collection-big-circle">
+                <div class="collection-small-circle"></div>
+            </div>
             <div class="section-number">2</div>
             <div class="small-title fz36 mb55">
                 Коллекция видеопроката, любимых фильмов и передач
@@ -177,9 +180,11 @@
     <div class="vset-tv-tags jq-element-wrapper" data-element-container="tags">
         <div class="container">
             <div class="section-number section-number_tags">3</div>
-            <div class="tags__title wow bounceIn jq-element" data-element="tags" data-wow-duration="0.6s" data-wow-delay="" data-wow-offset="">
-                <span class="tags__title-text-orange">#Теги-</span>
-                <span class="tags__title-text-blue">настроения</span>
+            <div class="tags__title wow bounceIn jq-element" data-element="tags" data-wow-delay="" data-wow-offset="" data-wow-duration="1.2s">
+                <div class="wow pulse jq-element" data-element="tags" data-wow-duration="0.5s" data-wow-delay="1s" data-wow-iteration="1" data-wow-offset="">
+                    <span class="tags__title-text-orange">#Теги-</span>
+                    <span class="tags__title-text-blue">настроения</span>
+                </div>
             </div>
             <div class="tags__small-title">создали особую систему тегирования</div>
             <div class="tags-gray-circle-big"></div>
@@ -209,8 +214,12 @@
         <div class="conclusion__circle-orange-top"></div>
         <div class="container">
             <div class="conclusion-wrapper">
-                <div class="conclusion__circle-big wow pulse jq-element" data-element="conclusion" data-wow-delay="" data-wow-duration="0.5s" data-wow-iteration="5" data-wow-offset=""></div>
-                <div class="conclusion__circle-small wow pulse jq-element" data-element="conclusion" data-wow-delay="" data-wow-duration="0.5s" data-wow-iteration="5" data-wow-offset=""></div>
+                <div class="conclusion-circles-wrapper wow bounceIn jq-element" data-element="conclusion" data-wow-offset="" data-wow-duration="1.5s">
+                    <div class="conclusion__circle-big wow pulse jq-element" data-element="conclusion" data-wow-delay="0.7s" data-wow-duration="0.5s" data-wow-iteration="2" data-wow-offset="">
+                        <div class="conclusion__circle-small wow pulse jq-element" data-element="conclusion" data-wow-delay="0.7s" data-wow-duration="0.5s" data-wow-iteration="2" data-wow-offset=""></div>
+                    </div>
+
+                </div>
                 <div class="section-number section-number_conclusion">4</div>
                 <div class="conclusion__title">
                     Удобный и интересный навигатор для клиента Интерактивного телевидения Ростелеком и не только.

@@ -274,7 +274,7 @@
                     elemWrapper = $(this).closest(myElemWrapper),
                     dataOffset;
                 if ($this.attr('data-element') === elemWrapper.attr('data-element-container')) {
-                    dataOffset = windowHeight - ($this.offset().top - elemWrapper.offset().top);
+                    dataOffset = (windowHeight-windowHeight*0.13) - ($this.offset().top - elemWrapper.offset().top);
                     $this.attr('data-wow-offset', dataOffset);
                 }
             });
