@@ -257,7 +257,9 @@
             autoWidth: false,
             nav: true,
             navText: '',
-            rewind: true
+            rewind: true,
+            touchDrag: false,
+            mouseDrag: false
         });
     };
 
